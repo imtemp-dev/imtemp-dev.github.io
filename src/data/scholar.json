@@ -1,0 +1,21 @@
+{
+  "stats": [
+    { "label": "Citations", "all": 1682, "since2021": 1487 },
+    { "label": "h-index", "all": 18, "since2021": 18 },
+    { "label": "i10-index", "all": 28, "since2021": 25 }
+  ],
+  "citationsByYear": [
+    { "year": "2019", "count": 62 },
+    { "year": "2020", "count": 112 },
+    { "year": "2021", "count": 160 },
+    { "year": "2022", "count": 210 },
+    { "year": "2023", "count": 298 },
+    { "year": "2024", "count": 388 },
+    { "year": "2025", "count": 435 },
+    { "year": "2026", "count": 150 }
+  ],
+  "updatedAt": "2026-04-11",
+  "partialYear": "2026",
+  "since5yLabel": "Since 2021",
+  "profileUrl": "https://scholar.google.com/citations?user=bz4JE30AAAAJ&hl=en"
+}
