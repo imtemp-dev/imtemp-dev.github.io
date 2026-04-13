@@ -1,4 +1,4 @@
-import { Copy, Check, ArrowDown, Mail } from 'lucide-react'
+import { Copy, Check, ArrowDown } from 'lucide-react'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -65,13 +65,6 @@ export default function Hero() {
                 aria-label="Kaggle"
               >
                 <KaggleIcon className="h-5 w-5" />
-              </a>
-              <a
-                href="mailto:dev@imtemp.dev"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>

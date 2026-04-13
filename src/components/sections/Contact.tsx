@@ -1,4 +1,3 @@
-import { Mail } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { GithubIcon } from '@/components/ui/github-icon'
 import { ScholarIcon } from '@/components/ui/scholar-icon'
@@ -43,13 +42,6 @@ export default function Contact() {
           >
             <KaggleIcon className="mr-2 h-5 w-5" />
             Kaggle
-          </a>
-          <a
-            href="mailto:dev@imtemp.dev"
-            className={cn(buttonVariants({ size: 'lg' }))}
-          >
-            <Mail className="mr-2 h-5 w-5" />
-            Email
           </a>
         </div>
       </div>
