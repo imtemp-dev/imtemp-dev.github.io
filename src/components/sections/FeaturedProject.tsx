@@ -48,7 +48,7 @@ export default function FeaturedProject() {
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left: Philosophy & Workflow */}
           <div className="space-y-8">
             <div className="space-y-4">

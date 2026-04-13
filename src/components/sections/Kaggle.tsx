@@ -93,26 +93,22 @@ export default function Kaggle() {
           </p>
 
           {/* Stats row */}
-          <div className="inline-flex items-center gap-6 px-6 py-4 rounded-xl border border-border bg-card">
-            <div className="text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-px rounded-xl border border-border bg-border overflow-hidden max-w-sm sm:max-w-none mx-auto">
+            <div className="bg-card text-center px-5 py-4">
               <p className="text-2xl font-bold">Expert</p>
               <p className="text-xs text-muted-foreground mt-0.5">Tier</p>
             </div>
-            <div className="w-px h-10 bg-border" />
-            <div className="text-center">
+            <div className="bg-card text-center px-5 py-4">
               <p className="text-2xl font-bold">6</p>
               <p className="text-xs text-muted-foreground mt-0.5">Competitions</p>
             </div>
-            <div className="w-px h-10 bg-border" />
-            <div className="flex items-center gap-3">
-              <div className="text-center">
-                <p className="text-2xl font-bold">🥈 2</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Silver</p>
-              </div>
-              <div className="text-center">
-                <p className="text-2xl font-bold">🥉 4</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Bronze</p>
-              </div>
+            <div className="bg-card text-center px-5 py-4">
+              <p className="text-2xl font-bold">🥈 2</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Silver</p>
+            </div>
+            <div className="bg-card text-center px-5 py-4">
+              <p className="text-2xl font-bold">🥉 4</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Bronze</p>
             </div>
           </div>
         </div>
