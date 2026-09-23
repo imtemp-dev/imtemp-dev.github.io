@@ -17,18 +17,13 @@ OUTPUT_PATH = Path(__file__).parent.parent / "src" / "data" / "scholar.json"
 
 
 def fetch_with_scholarly():
-    from scholarly import scholarly, ProxyGenerator
+    from scholarly import scholarly
 
-    try:
-        author = scholarly.search_author_id(SCHOLAR_USER_ID)
-        author = scholarly.fill(author, sections=["basics", "indices", "counts"])
-    except Exception as e:
-        print(f"Warning: direct fetch failed ({e!r}), retrying with free proxy...", file=sys.stderr)
-        pg = ProxyGenerator()
-        pg.FreeProxies()
-        scholarly.use_proxy(pg)
-        author = scholarly.search_author_id(SCHOLAR_USER_ID)
-        author = scholarly.fill(author, sections=["basics", "indices", "counts"])
+    # No free-proxy fallback: FreeProxies() cycles public proxies for minutes
+    # (the 10-min CI timeouts) and Google blocks datacenter IPs anyway.
+    # Fail fast with the real error instead.
+    author = scholarly.search_author_id(SCHOLAR_USER_ID)
+    author = scholarly.fill(author, sections=["basics", "indices", "counts"])
 
     all_citations = author.get("citedby")
     if all_citations is None:

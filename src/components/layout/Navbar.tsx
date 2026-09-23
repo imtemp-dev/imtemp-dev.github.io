@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/sheet'
 import { useTheme } from '@/hooks/useTheme'
 
-const NAV_LINKS = ['Featured', 'Projects', 'Skills', 'Scholar', 'Kaggle', 'Contact']
+const NAV_LINKS = ['Featured', 'Projects', 'Skills', 'Research', 'Scholar', 'Kaggle', 'Contact']
 
 export default function Navbar() {
   const { theme, toggle, mounted } = useTheme()

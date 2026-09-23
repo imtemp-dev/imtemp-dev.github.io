@@ -8,10 +8,11 @@ import Skills from '@/components/sections/Skills'
 import Kaggle from '@/components/sections/Kaggle'
 import Contact from '@/components/sections/Contact'
 
+const FeaturedResearch = lazy(() => import('@/components/sections/FeaturedResearch'))
 const Scholar = lazy(() => import('@/components/sections/Scholar'))
 
-class ScholarErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {
-  constructor(props: { children: ReactNode }) {
+class SectionErrorBoundary extends Component<{ children: ReactNode; name: string }, { hasError: boolean }> {
+  constructor(props: { children: ReactNode; name: string }) {
     super(props)
     this.state = { hasError: false }
   }
@@ -20,7 +21,7 @@ class ScholarErrorBoundary extends Component<{ children: ReactNode }, { hasError
   }
   render() {
     if (this.state.hasError) {
-      return <div className="py-24 text-center text-sm text-muted-foreground">Scholar data unavailable</div>
+      return <div className="py-24 text-center text-sm text-muted-foreground">{this.props.name} unavailable</div>
     }
     return this.props.children
   }
@@ -35,11 +36,16 @@ function App() {
         <FeaturedProject />
         <Projects />
         <Skills />
-        <ScholarErrorBoundary>
+        <SectionErrorBoundary name="Research">
+          <Suspense fallback={<div className="py-24" />}>
+            <FeaturedResearch />
+          </Suspense>
+        </SectionErrorBoundary>
+        <SectionErrorBoundary name="Scholar">
           <Suspense fallback={<div className="py-24" />}>
             <Scholar />
           </Suspense>
-        </ScholarErrorBoundary>
+        </SectionErrorBoundary>
         <Kaggle />
         <Contact />
       </main>

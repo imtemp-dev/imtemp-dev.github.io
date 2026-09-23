@@ -1,0 +1,60 @@
+{
+  "video": {
+    "youtubeId": "pT3dRu9XgHE",
+    "title": "Autonomous Robotic Kiwifruit Harvesting and Pollination",
+    "channel": "Centre for Automation & Robotic Engineering Science (CARES)",
+    "url": "https://www.youtube.com/watch?v=pT3dRu9XgHE"
+  },
+  "mediaMention": {
+    "youtubeId": "0UDcvbTsBhs",
+    "title": "Robot Revolution Meets the Horticulture Industry",
+    "channel": "The University of Waikato",
+    "url": "https://www.youtube.com/watch?v=0UDcvbTsBhs"
+  },
+  "papers": [
+    {
+      "title": "Robotic kiwifruit harvesting using machine vision, convolutional neural networks, and robotic arms",
+      "venue": "Biosystems Engineering 181",
+      "year": 2019,
+      "citations": 435,
+      "url": "https://doi.org/10.1016/j.biosystemseng.2019.01.013"
+    },
+    {
+      "title": "Improvements to and large-scale evaluation of a robotic kiwifruit harvester",
+      "venue": "Journal of Field Robotics 37(2)",
+      "year": 2020,
+      "citations": 153,
+      "url": "https://doi.org/10.1002/rob.21890"
+    },
+    {
+      "title": "Autonomous pollination of individual kiwifruit flowers: Toward a robotic kiwifruit pollinator",
+      "venue": "Journal of Field Robotics 37(2)",
+      "year": 2020,
+      "citations": 131,
+      "url": "https://doi.org/10.1002/rob.21861"
+    },
+    {
+      "title": "Deep neural network based real-time kiwi fruit flower detection in an orchard environment",
+      "venue": "arXiv:2006.04343",
+      "year": 2020,
+      "citations": 49,
+      "url": "https://arxiv.org/abs/2006.04343"
+    },
+    {
+      "title": "Evaluating the quality of kiwifruit pollinated with an autonomous robot",
+      "venue": "Field Robotics 1",
+      "year": 2021,
+      "citations": 16,
+      "url": "https://doi.org/10.55417/fr.2021009"
+    },
+    {
+      "title": "Kiwifruit detection in challenging conditions",
+      "venue": "arXiv:2006.11729",
+      "year": 2020,
+      "citations": 14,
+      "url": "https://arxiv.org/abs/2006.11729"
+    }
+  ],
+  "citationNote": "Citation counts via Google Scholar, September 2026",
+  "profileUrl": "https://scholar.google.com/citations?user=bz4JE30AAAAJ&hl=en"
+}

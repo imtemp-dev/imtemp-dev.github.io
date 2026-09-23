@@ -1,1 +1,3 @@
 scholarly==1.7.11
+# scholarly 1.7.11 imports bibtexparser.bibdatabase, removed in bibtexparser 2.x
+bibtexparser<2
